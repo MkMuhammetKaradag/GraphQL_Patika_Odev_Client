@@ -1,0 +1,16 @@
+.listitem {
+  color: rgba(0, 0, 0, 0.445) !important;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.listitem:hover {
+  color: black !important;
+}
+.listdate {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.list {
+  position: relative;
+}

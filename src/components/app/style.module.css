@@ -1,0 +1,15 @@
+.content {
+  background-color: #fff;
+  padding: 24px;
+  margin: 24px;
+  border: solid 4px bisque;
+}
+
+.container {
+  height: 100vh;
+}
+
+.headerMenu {
+  background: none;
+  border: none;
+}
