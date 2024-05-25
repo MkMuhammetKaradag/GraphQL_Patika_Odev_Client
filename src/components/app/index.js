@@ -3,7 +3,7 @@ import { Col, Row } from "antd";
 import styles from "./style.module.css";
 import { Avatar, List } from "antd";
 import HeaderMenu from "./HeaderMenu";
-import NewPost from "../../pages/NewPost";
+import NewEvent from "../../pages/NewEvent";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Home from "../../pages/Home";
 
@@ -21,7 +21,7 @@ function App({ children }) {
           <Routes>
             <Route path="/" element={<Home />} />
             {/* <Route index element={<Home />} /> */}
-            <Route path="/newpost" element={<NewPost />} />
+            <Route path="/newEvent" element={<NewEvent />} />
             <Route path="/event/:id" element={<Event />} />
             {/* </Route> */}
           </Routes>

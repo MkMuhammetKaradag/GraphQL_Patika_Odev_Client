@@ -5,22 +5,11 @@ import App from "./components/app";
 import reportWebVitals from "./reportWebVitals";
 import { ApolloProvider } from "@apollo/client";
 import { client } from "./apollo";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import { BrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
-import NewPost from "./pages/NewPost";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home></Home>,
-  },
-  {
-    path: "/newpost",
-    element: <NewPost></NewPost>,
-  },
-]);
+
 root.render(
   // <React.StrictMode>
   <ApolloProvider client={client}>

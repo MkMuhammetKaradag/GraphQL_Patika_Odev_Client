@@ -1,12 +1,10 @@
 import { Divider } from "antd";
 import React from "react";
-import styles from "./styles.module.css";
-import { useLazyQuery } from "@apollo/client";
-import { GET_POST_COMMENTS } from "./queries";
-import Loading from "../../components/Loading";
-import { Avatar, List } from "antd";
 
-const Participant = ({ participants }) => {
+import { Avatar, List } from "antd";
+import NewParticipantForm from "./NewParticipantForm";
+
+const Participant = ({ participants, eventId }) => {
   return (
     <div>
       <Divider>Participants</Divider>
@@ -20,6 +18,8 @@ const Participant = ({ participants }) => {
           </List.Item>
         )}
       />
+
+      <NewParticipantForm eventId={eventId}></NewParticipantForm>
     </div>
   );
 };

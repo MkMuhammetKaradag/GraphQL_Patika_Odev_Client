@@ -7,7 +7,7 @@ import Title from "antd/es/typography/Title";
 import { Col, Row } from "antd";
 import styles from "./styles.module.css";
 
-import Participant from "./Participant";
+import Participant from "./Participant/Participant";
 const Event = () => {
   const { id } = useParams();
   const { loading, error, data, subscribeToMore } = useQuery(GET_EVENT, {
@@ -61,7 +61,7 @@ const Event = () => {
       <div className={styles.description}>{event.desc}</div>
 
       {/* <Comments post_id={id}></Comments> */}
-      <Participant participants={event.participants}></Participant>
+      <Participant participants={event.participants} eventId={id}></Participant>
     </div>
   );
 };

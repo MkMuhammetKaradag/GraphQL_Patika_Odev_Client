@@ -41,7 +41,7 @@ const Home = () => {
           <List.Item className={styles.list}>
             <List.Item.Meta
               title={
-                <Link className={styles.listitem} to={`/Event/${item.id}`}>
+                <Link className={styles.listitem} to={`/Event/${item._id}`}>
                   {item.title}
                 </Link>
               }

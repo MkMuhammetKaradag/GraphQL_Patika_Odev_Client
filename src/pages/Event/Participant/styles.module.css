@@ -1,0 +1,17 @@
+.description {
+  font-size: 1.25rem;
+  margin: 10px;
+  color: black;
+}
+.commensButton {
+  cursor: pointer;
+}
+.commensButtonDisabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.eventdate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

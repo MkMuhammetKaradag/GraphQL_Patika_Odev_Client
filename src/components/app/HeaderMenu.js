@@ -16,7 +16,7 @@ const items = [
   },
   {
     label: "Events",
-    key: "Events",
+    key: "newEvent",
     // icon: <MailOutlined />,
   },
 ];
